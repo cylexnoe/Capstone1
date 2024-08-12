@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8c8c8c;
+    font-family: Arial, sans-serif;
+}
+.login-container {
+    background-color: #800000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.login-container img {
+    height: 60px;
+    margin: 10px;
+}
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+}
+.login-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.login-container .login-button {
+    background-color: #007bff;
+}
+.login-container .create-account-button {
+    background-color: #28a745;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login-container .forgot {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* FORGOT PASS STYLE */
+.form-container {
+    background-color: #800000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+}
+.form-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #007bff;
+}
+.btn{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    background-color: #007bff;
+    text-decoration: none;
+}
+.logos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.logos img {
+    height: 70px;
+    border-radius: 50%;
+}

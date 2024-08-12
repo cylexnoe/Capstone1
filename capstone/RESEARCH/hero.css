@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8C8583;
+}
+
+header {
+    background-color: #740000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; 
+    color: #FFFFFF;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.header-logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.hero {
+    background-color: #504A48;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+    color: #d3d3d3;
+}
+
+.school-logo {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.school-logo img {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+
+.buttons {
+    background-color: #dcdcdc;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.button-group .btn {
+    background-color: #5E5A59;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group .btn:hover {
+    background-color: #3C3937;
+}
+
+nav .navi:hover {
+    color: #F45800;
+}

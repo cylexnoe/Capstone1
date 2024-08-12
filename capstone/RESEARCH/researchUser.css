@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #807a7a;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #6a0d0d;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: left; /* Changed from center to left */
+}
+
+nav ul li a.active {
+    background-color: #8a2b2b;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.document-section, .comment-section, .timeline-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-section {
+    grid-column: span 2;
+}
+
+.document-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-info {
+    display: flex;
+    align-items: center;
+}
+
+.doc-name {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.open-btn, .edit-btn, .delete-btn {
+    background-color: #1d1b99;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.open-btn:hover, .edit-btn:hover, .delete-btn:hover {
+    background-color: #3b39c1;
+}
+
+.comment-section h3 {
+    margin: 0 0 10px 0;
+}
+
+.comment-box {
+    background-color: #d9d9d9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment-user {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.comment-text {
+    margin: 0;
+}
+
+.timeline-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

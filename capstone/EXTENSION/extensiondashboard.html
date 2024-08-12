@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMC Extension Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1px;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+        .navbar .title {
+            font-size: 1.5em;
+            color: white;
+        }
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .search-bar input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+        .navbar .search-bar button {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            margin-left: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .announcement {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .announcement img {
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .announcement .text {
+            flex: 1;
+        }
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.164);
+            padding: 50px;
+            border-radius: 10px;
+        }
+        .carousel img {
+            max-width: 100px;
+            margin: 0 10px;
+        }
+        .carousel .left, .carousel .right {
+            cursor: pointer;
+            font-size: 24px;
+            user-select: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel .left {
+            left: 290px;
+        }
+        .carousel .right {
+            right: 300px;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            background-color: #e8e8e8;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            background-color: #b0b0b0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .sidebar-item {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            flex: 1;
+            margin-bottom: 10px;
+        }
+        .sidebar-item:last-child {
+            margin-bottom: 0;
+        }
+        .main-content {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .widget-container {
+      display: flex;
+      height: 80vh;
+      background-color: #e8e8e8;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar {
+      width: 25%;
+      background-color: #b0b0b0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-sizing: border-box;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .sidebar-item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sidebar-item:hover {
+      background-color: #45a049;
+    }
+    .sidebar-item img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .main-content {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .main-content h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .main-content p {
+      font-size: 1em;
+      color: #666;
+    }
+    .main-content img {
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1></h1>
+</div>
+
+<div class="navbar">
+    <div class="title">
+        <h3 style="font-size: bold; padding: 10px; position: relative; left: 30px;">CRMC EXTENSION UPDATES</h3>
+    </div>
+    <div style="align-items: center;" class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    <div style="position: relative; right: 50px; padding: 10px; word-spacing: 50px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+        <a href="#home">HOME</a>
+        <a href="#news">NEWS</a>
+        <a href="#updates">UPDATES</a>
+        <a href="#activities">ACTIVITES</a>
+        <a href="#"></a>
+    </div>
+</div>
+
+<div class="announcement">
+    <img src="congrats_image.png" alt="Congratulations" width="200">
+    <div class="text">
+        <h2>CONGRATULATIONS!</h2>
+        <p>For passing the 2023 Psychometrician Licensure Examination</p>
+        <p>We are so proud of you!</p>
+    </div>
+</div>
+
+<div class="carousel">
+    <span class="left">&#10094;</span>
+    <img src="logo1.png" alt="College of Teacher Education">
+    <img src="logo2.png" alt="Psychology Program">
+    <img src="logo3.png" alt="College of Computer Studies">
+    <img src="logo4.png" alt="College of Commerce">
+    <span class="right">&#10095;</span>
+</div>
+
+<script>
+    const leftArrow = document.querySelector('.left');
+    const rightArrow = document.querySelector('.right');
+    const carousel = document.querySelector('.carousel');
+    let scrollAmount = 0;
+
+    leftArrow.addEventListener('click', () => {
+        carousel.scrollTo({
+            top: 0,
+            left: (scrollAmount -= 200),
+            behavior: 'smooth'
+        });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        carousel.scrollTo({
+            top: 0,
+            left: (scrollAmount += 200),
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+<div class="widget-container">
+    <div class="sidebar">
+      <div class="sidebar-item"><img src="https://placehold.co/50x50?text=1" alt="Item 1"></div>
+      <div class="sidebar-item"><img src="https://placehold.co/50x50?text=2" alt="Item 2"></div>
+      <div class="sidebar-item"><img src="https://placehold.co/50x50?text=3" alt="Item 3"></div>
+      <div class="sidebar-item"><img src="https://placehold.co/50x50?text=4" alt="Item 4"></div>
+      <div class="sidebar-item"><img src="https://placehold.co/50x50?text=5" alt="Item 5"></div>
+      <div class="sidebar-item"><img src="https://placehold.co/50x50?text=6" alt="Item 6"></div>
+     
+    </div>
+    <div class="main-content">
+      <h1>Welcome to the Main Content Area</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="https://placehold.co/400?text=Main+Image" alt="Main Image" />
+    </div>
+  </div>
+
+
+
+</body>
+</html>
